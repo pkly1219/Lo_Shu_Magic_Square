@@ -11,8 +11,19 @@ int main(){
     int array2 [3][3] = {{5,9,3},
                          {3,4,7},
                          {1,8,6}};
-    test(array1);
-    test(array2);
+   if(test(array1))
+    {
+    printf("It's a Lo Shu Magic Square\n");
+    }
+    else 
+    printf("It's not a Lo Shu Magic Square\n");
+    if(test(array2))
+     {
+    printf("It's a Lo Shu Magic Square\n");
+    }
+    else 
+    printf("It's not a Lo Shu Magic Square\n");
+
     
 
 
