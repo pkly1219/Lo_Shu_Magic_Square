@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 //sum of one row
 int sumOfRow (int const arr[][3], int num)
@@ -36,7 +37,7 @@ int sumOfDiagonalLine2 (int const arr[][3] )
     return arr[2][0] + arr[1][1] + arr[0][2];
 }
  
- void test(int const arr[][3])
+ bool test(int const arr[][3])
  {
      int sumR0, sumR1, sumR2;
      
@@ -59,22 +60,18 @@ int sumOfDiagonalLine2 (int const arr[][3] )
              //Step 3: test if two sum of diagonal line are equal or not
              if (sumOfDiagonalLine1(arr) == sumOfDiagonalLine2(arr))
              {
-                 printf("It's a Lo Shu Magic Square\n");
+                return 1;
                  
              }
              else
-            printf("It's not a Lo Shu Magic Square\n");
-           
-
+             return 0;
          }
 
         else
-        printf("It's not a Lo Shu Magic Square2\n ");
-
-
-     }
-     
+        return 0;
+      
+     }   
      else
-     printf("It's not a Lo Shu Magic Square");
-     
+     return 0;
+   
  }
