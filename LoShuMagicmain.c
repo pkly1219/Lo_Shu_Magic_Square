@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include "testfunction.c"
+
 int main(){
 
     int array1 [3][3] = {{4,9,2},
