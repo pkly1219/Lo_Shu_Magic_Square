@@ -16,12 +16,16 @@ int main(){
     {
     printf("It's a Lo Shu Magic Square\n");
     }
+       
     else 
+       
     printf("It's not a Lo Shu Magic Square\n");
+    
     if(test(array2))
      {
     printf("It's a Lo Shu Magic Square\n");
     }
+        
     else 
     printf("It's not a Lo Shu Magic Square\n");
 
