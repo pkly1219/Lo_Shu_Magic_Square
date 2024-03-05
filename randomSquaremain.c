@@ -22,7 +22,6 @@ bool appear(int arr[][3], int x)
 }
 
 
-
 void printSquare(int arr[][3]){
     for(int i = 0; i < 3; i++)
 
@@ -37,6 +36,8 @@ void printSquare(int arr[][3]){
     }
 }
 
+
+
 //assign all elements of the array to 0
 void ereaseSquare(int arr[][3])
 {
@@ -48,6 +49,7 @@ void ereaseSquare(int arr[][3])
         }
     }
 }
+
 
 int main()
 {
@@ -75,7 +77,8 @@ int main()
     }
     //count the total number of squares generated and tested before success
      count++;
-  
+
+    
     
     if(test(arr))
     {
@@ -84,7 +87,9 @@ int main()
         printf("%d squares are generated and tested before success", count);
 
     }
+        
     else
+        
     {
         //print the first array
         if(count == 1)
