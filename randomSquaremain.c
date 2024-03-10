@@ -23,6 +23,7 @@ bool appear(int arr[][3], int x)
 }
 
 
+
 void printSquare(int arr[][3]){
     for(int i = 0; i < 3; i++)
 
